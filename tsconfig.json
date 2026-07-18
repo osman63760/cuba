@@ -1,0 +1,33 @@
+export interface Munsyi {
+  id: string;
+  nama: string;
+  noKP: string;
+  negeri: string;
+  bidang: string;
+  status: 'Lulus' | 'Belum Lulus';
+  tahun: string;
+}
+
+export interface Tetapan {
+  namaSistem: string;
+  namaOrganisasi: string;
+  tahun: string;
+  logo: string;
+  primaryColor: string;
+  secondaryColor: string;
+  isDarkMode: boolean;
+}
+
+export interface AdminProfil {
+  avatar: string;
+  nama: string;
+  emel: string;
+  jawatan: string;
+  telefon: string;
+}
+
+export interface ToastMessage {
+  id: string;
+  message: string;
+  type: 'success' | 'error' | 'info' | 'warning';
+}
